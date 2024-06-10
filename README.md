@@ -15,7 +15,7 @@ This directory contains information about my education and skills.
 - Dart
 - Python
 
-## clone
+## UI_clone
 This directory contains a static clone of the Netflix website created using only HTML and CSS.
 
 ### Project Description
