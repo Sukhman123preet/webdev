@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+body{
+    background: var(--bg-color);
+    color:var(--text-color);
+}
+#home{
+    background-color:#1a1e25;
+}
+.header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    padding:2rem;
+    display:flex;
+    align-items:center ;
+    justify-content: space-between;
+    z-index: 100;
+    border-radius: 4px;
+    background-color: #1a1e25;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    
+}
+.navbar a:hover,.navbar a.active{
+    color: var(--main-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 5% 2rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3{
+    font-size: 4rem;
+}
+
+@keyframes appearDisappear {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    25% {
+        opacity: 1;
+        max-width: 193px;
+    }
+    50% {
+        opacity: 1;
+        max-width: 385px;
+    }
+    75% {
+        opacity: 1;
+        max-width: 193px;
+    }
+    100% {
+        opacity: 1;
+        max-width: 0;
+    }
+}
+.skill{
+    padding-bottom: 0px;
+    margin:0px;
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;/*"nowrap" means that text will not wrap to the next line and will remain on a single line.*/
+    overflow: hidden;/*hidden" means any content that exceeds the specified dimensions will be hidden from view.
+*/
+    display:inline-block;/*for own content block for others inline*/
+    vertical-align: bottom;
+}
+.skill_appear {
+    color:#0ef;
+    animation: appearDisappear 6s infinite; 
+} 
+
+.home-content h1{
+    font-size: 3rem;
+}
+.home-content .btn a{
+    color:rgb(4, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-content .btn{
+    text-decoration:none;
+    background-color: #0ef;
+    padding: 12px;
+    color:#090002;
+    font-size: medium;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    width:16rem;
+    box-shadow: 0px 0px 10px 5px rgb(6, 237, 206);
+    transition: transform 0.3s; 
+}
+.social-media a{
+    color:var(--main-color);
+    font-size: 4rem; 
+    margin: 0 15px;
+    display: inline-block; 
+}
+.box{
+    min-width: 280px;
+    max-height: 350px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px 4px rgb(6, 237, 206);
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    transition: 5ms;
+    box-sizing: border-box;
+    
+}
+
+.line{
+    width:100%;
+    height: 2px;
+    background-color: #333;
+}
+
+.child{
+    width:100%;
+    height:80px;
+    background-color:var(--second-bg-color);
+    position: absolute;
+    border-top-right-radius: 15%;
+    /* border-bottom-left-radius: 15%; */
+    /* border-bottom-right-radius: 15%; */
+
+}
+.box>img:first-child {
+    margin-top: 2rem;
+    width:35%;
+     height:30%; 
+    z-index: 20;
+    border: 2px solid rgb(196, 199, 198);
+    border-radius:100%;
+    transition: 5ms;
+    box-shadow: 0px 0px 10px 6px rgb(11, 229, 221);
+    transition: transform 0.3s ease; 
+}
+
+.profile-info li {
+    padding:0.5rem;
+    color: #333; 
+    font-size: 16px;
+    font-weight: 500;
+}
+.platforms {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.platforms img {
+    transition: transform 0.3s ease; 
+}
+
+.platforms img:hover,.home-content .btn:hover,.box>img:first-child:hover {
+    transform: scale(1.1);
+}
+
+.info{
+    display: flex;
+    gap:4rem;
+}
+#narrativeContainer {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+ .narrative{
+    padding:5px;
+    border-radius: 5px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content:flex-start;
+    transition:  0.3s ease;
+    border-left: 4px solid #b3edf0;
+} 
+#narrativeContainer {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+.narrative:hover{
+    background: #151515a4;
+    border-left-color:var(--main-color);
+}
+.narrative p{
+    font-size: 2rem;
+}
+.narrative p strong{
+    font-size: 2.5rem;
+}
+.projects{
+    padding-top: 0px;
+}
+.p_heading{
+    font-size: xx-large;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+ strong{
+    color: #0ef;
+}
+.list_of_p div {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 4px solid #b3edf0;
+    border-radius: 5px;
+    font-size: 2em;
+    transition:  0.3s ease;
+}
+
+.list_of_p div:hover {
+    background: #151515a4;
+    border-left-color:var(--main-color);
+}
+
+.list_of_p div strong {
+    
+    padding:0.25rem;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color:var(--main-color);
+}
+#code{
+    background: #151515a4;
+    display:inline-flex;
+    border-left: 4px solid #eb6b03;
+    border-right: 4px solid #eb6b03;
+}
+#code a{
+        min-width: 2rem;
+        padding-left: 0.75rem;
+        color:chocolate;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height:1rem;
+}
+.pop_up{
+    font-size:xx-large;
+}
+.git_txt {
+    padding-left: 1rem;
+    opacity: 0; 
+    white-space: nowrap;
+    overflow: hidden; 
+    max-width: 0; 
+    transition: max-width 1s ease-in-out, 1s ease-in-out;
+}
+#code:hover .git_txt{
+    opacity: 1; 
+    max-width: 160px; 
+}
+.contact{
+    padding-top: 0px;
+}
+form{
+    text-align: center;
+    margin: 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom:3rem ;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+form .input-box input,form textarea{
+    background-color: var(--second-bg-color);
+    width:100%;
+    padding:1.5rem;
+    font-size:1.75rem;
+    font-weight: 400;
+    border-radius: 4px;
+}
+form .input-box input:focus, form textarea:focus {
+    color: #fff;
+    box-shadow: 0 0px 6px 6px rgba(1, 14, 15, 1);     
+}
+form .btn {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(13, 209, 223, 0.575);
+}
+
+form .btn:hover {
+    background-color:var(--second-bg-color);
+    box-shadow: 0px 0px 5px 4px rgb(15, 18, 18);
+    
+}
+form .btn .txt {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+form .btn i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+form .btn:hover i {
+    transform: rotate(10deg);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding :1rem 9%;
+    background-color:var(--second-bg-color);
+}
+.footer-text p{
+    font-size: 1.5rem;
+
+} 
+.footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--bg-color);
+    border-radius:0.8rem;
+    box-shadow: 0px 0px 5px 2px rgba(4, 241, 241, 0.36);
+}
+.footer-icon a:hover{
+    box-shadow: 0px 0px 5px 2px rgba(4, 241, 241);
+}
+.footer-icon a i{
+    font-size:2rem;
+    color:aliceblue; 
+}
