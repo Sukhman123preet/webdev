@@ -16,7 +16,7 @@ Welcome to my-web-projects! This repository houses a collection of web projects 
 ## Projects
 
 ## 1. Currency Converter
-A dynamic web application that converts currency values based on the latest exchange rates. Users can select different currencies and get real-time conversions.
+A dynamic web application that converts currency values based on the latest exchange rates. Users can select different currencies and get their conversions.
 
 ## Features:
 
